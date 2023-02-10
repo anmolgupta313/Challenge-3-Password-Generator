@@ -66,6 +66,19 @@ var hasSpecial = confirm("Do you want special characters?");
     return "Please select at least one character type.";
   };
 
+// I created if statement thats helping in concat with possibleCharacters
+  if (hasLowercase) {
+    possibleCharacters = possibleCharacters.concat(lowercaseCharacters);
+  }
+  if (hasUppercase) {
+    possibleCharacters = possibleCharacters.concat(uppercaseCharacters);
+  }
+  if (hasNumbers) {
+    possibleCharacters = possibleCharacters.concat(numericCharacters);
+  }
+  if (hasSpecial) {
+    possibleCharacters = possibleCharacters.concat(specialCharacters);
+  }
 }
 
 
