@@ -79,6 +79,16 @@ var hasSpecial = confirm("Do you want special characters?");
   if (hasSpecial) {
     possibleCharacters = possibleCharacters.concat(specialCharacters);
   }
+
+  // created a for loop and created a var for randomize  with math.random method with possible characters 
+  var finalPassword = ""
+  for (var i = 0; i < numberOfCharacters; i++) {
+    var rng =[Math.floor(Math.random() * possibleCharacters.length)];
+    // or finalPassword += possibleCharacters[rng];
+    finalPassword = finalPassword + possibleCharacters[rng];
+  }
+  return finalPassword;
+
 }
 
 
