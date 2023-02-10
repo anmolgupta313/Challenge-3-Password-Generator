@@ -21,6 +21,16 @@ function generatePassword(){
     alert("Your password will be " + numberOfCharacters + " characters long.");
 
   }
+
+  // I have created the variable with confirm method for the lower case if they selected lowercase and then they will get a prompt that your password will have lowecase else not
+  var hasLowercase = confirm("Do you want lowercase characters?");
+  if (hasLowercase) {
+    var turnToLowercase = alert("Your password will have lowercase characters.");
+  }
+  else {
+    alert("Your password will NOT have lowercase characters.");
+  }
+
 }
 
 // Write password to the #password input
