@@ -8,6 +8,19 @@ function generatePassword(){
   var lowercaseCharacters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var specialCharacters = ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
   var possibleCharacters = [];
+
+
+// Created a variable number of characters for the promt message and then wrote if condition and then particular msg will prompted
+  var numberOfCharacters = prompt("How many characters do you want in your password? Choose between 8-128 characters.");
+  if (numberOfCharacters < 8 || numberOfCharacters > 128) {
+    return "Please choose a valid number of characters.";
+  } else if (isNaN(numberOfCharacters)) {
+    numberOfCharacters = prompt("Please enter a valid number.");
+  }
+  else {
+    alert("Your password will be " + numberOfCharacters + " characters long.");
+
+  }
 }
 
 // Write password to the #password input
