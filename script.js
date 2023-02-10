@@ -35,10 +35,10 @@ function generatePassword(){
 
   var hasUppercase = confirm("Do you want uppercase characters?");
 if (hasUppercase) {
-  alert("Your password will have lowercase characters.");
+  alert("Your password will have uppercase characters.");
 }
 else {
-  alert("Your password will NOT have lowercase characters.");
+  alert("Your password will NOT have uppercase characters.");
 }
 
 // I have created the variable with confirm method for the number if they selected yes they want number and then they will get a prompt that your password will have numbers else not
