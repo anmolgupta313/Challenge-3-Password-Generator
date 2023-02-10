@@ -31,7 +31,21 @@ function generatePassword(){
     alert("Your password will NOT have lowercase characters.");
   }
 
+  // I have created the variable with confirm method for the lower case if they selected uppercase and then they will get a prompt that your password will have uppercase else not
+
+  var hasUppercase = confirm("Do you want uppercase characters?");
+if (hasUppercase) {
+  var turnToUppercase = alert("Your password will have lowercase characters.");
 }
+else {
+  alert("Your password will NOT have lowercase characters.");
+}
+
+}
+
+
+
+
 
 // Write password to the #password input
 function writePassword() {
